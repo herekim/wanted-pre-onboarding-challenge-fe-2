@@ -1,23 +1,2 @@
-# JSDoc Boilerplate
-
-## Usage
-
-### Install
-
-```bash
-npm install
-or
-yarn
-```
-
-### Build
-
-```bash
-npm run docs
-or
-yarn docs
-```
-
-#### Reference
-
-- [jsdoc.app](https://jsdoc.app)
+# For TypeScript
+jsdoc으로 만든 Todo 앱을 TS로 발전시키면서 TS가 탄생한 이유와 사용 방법, 타입 시스템에 대한 유스 케이스를 학습합니다.
