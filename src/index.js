@@ -28,11 +28,11 @@ const getTodos = () => {}
  * @param {number} id
  * @return {object} id, title, done, category, tags
  */
- const getTodo = (id) => {};
+const getTodo = (id) => {}
 
- /**
-	* @description 할 일 삭제하기
-	* @param {number} id
-	* @returns {object} id, title, done, category, tags
-  */
- const deleteTodo = (id) => {} 
+/**
+ * @description 할 일 삭제하기
+ * @param {number} id
+ * @returns {object} id, title, done, category, tags
+ */
+const deleteTodo = (id) => {}
