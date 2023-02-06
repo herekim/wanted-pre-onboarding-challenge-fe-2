@@ -1,51 +1,38 @@
 /**
- * Represents a book.
- * @constructor
- * @param {string} title - The title of the book.
- * @param {string} author - The author of the book.
+ * @description 할 일 생성
+ * @param {string} title
+ * @param {string} content
+ * @returns {object} id, title, done, category, tags
  */
-function Book(title, author) {}
+const createTodo = (title, contnet) => {}
 
 /**
- * Both of these will link to the bar function.
- * @see {@link bar}
- * @see bar
+ * @description 할 일 수정
+ * @param {number} id
+ * @param {string} title
+ * @param {boolean} done
+ * @param {string} category
+ * @param {array} tags
+ * @returns {object} id, title, done, category, tags
  */
-function foo() {}
-
-// Use the inline {@link} tag to include a link within a free-form description.
-/**
- * @see {@link foo} for further information.
- * @see {@link http://github.com|GitHub}
- */
-function bar() {}
+const updateTodo = (title, content, done, category, tags) => {}
 
 /**
- * Generic dairy product.
- * @constructor
+ * @description 모든 할 일 불러오기
+ * @return {array} All todo list
  */
-function DairyProduct() {}
+const getTodos = () => {}
 
 /**
- * Check whether the dairy product is solid at room temperature.
- * @abstract
- * @return {boolean}
+ * @description 할 일 불러오기
+ * @param {number} id
+ * @return {object} id, title, done, category, tags
  */
-DairyProduct.prototype.isSolid = function () {
-	throw new Error('must be implemented by subclass!');
-};
+ const getTodo = (id) => {};
 
-/**
- * Cool, refreshing milk.
- * @constructor
- * @augments DairyProduct
- */
-function Milk() {}
-
-/**
- * Check whether milk is solid at room temperature.
- * @return {boolean} Always returns false.
- */
-Milk.prototype.isSolid = function () {
-	return false;
-};
+ /**
+	* @description 할 일 삭제하기
+	* @param {number} id
+	* @returns {object} id, title, done, category, tags
+  */
+ const deleteTodo = (id) => {} 
