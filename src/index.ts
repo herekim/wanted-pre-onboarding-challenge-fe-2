@@ -1,10 +1,33 @@
+interface CreateTodo {
+  title: string
+  content: string
+}
+
+interface UpdateTodo {
+  title: string
+  content: string
+  done: boolean
+  category: string
+  tags: string[]
+}
+
+interface GetTodos {}
+
+interface GetTodo {
+  id: number
+}
+
+interface DeleteTodo {
+  id: number
+}
+
 /**
  * @description 할 일 생성
  * @param {string} title
  * @param {string} content
  * @returns {object} id, title, done, category, tags
  */
-const createTodo = (title, contnet) => {}
+const createTodo = ({ title, content }: CreateTodo) => {}
 
 /**
  * @description 할 일 수정
@@ -15,7 +38,7 @@ const createTodo = (title, contnet) => {}
  * @param {array} tags
  * @returns {object} id, title, done, category, tags
  */
-const updateTodo = (title, content, done, category, tags) => {}
+const updateTodo = ({ title, content, done, category, tags }: UpdateTodo) => {}
 
 /**
  * @description 모든 할 일 불러오기
@@ -28,11 +51,11 @@ const getTodos = () => {}
  * @param {number} id
  * @return {object} id, title, done, category, tags
  */
-const getTodo = (id) => {}
+const getTodo = ({ id }: GetTodo) => {}
 
 /**
  * @description 할 일 삭제하기
  * @param {number} id
  * @returns {object} id, title, done, category, tags
  */
-const deleteTodo = (id) => {}
+const deleteTodo = ({ id }: DeleteTodo) => {}
